@@ -1,0 +1,37 @@
+.appointment {
+  min-height: 110vh;
+  margin: 0 2vw;
+  padding: 0 8vw;
+  background-color: var(--low-opacity-purple);
+  border-radius: 40px;
+}
+.content {
+  width: 50%;
+  background: url(../../Asset//appointment/line-bg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.graphic {
+  width: 50%;
+}
+.graphic .mobile {
+  width: 100%;
+}
+.woman {
+    position: relative;
+    left: 10%;    
+  width: 100%;
+  animation: movement infinite;
+}
+
+@keyframes movement {
+  0% {
+    transform: translateX(-1vw);
+  }
+  100% {
+    transform: translateX(1vw);
+  }
+}
+.btnText {
+  padding: 10vh 20vw;
+}

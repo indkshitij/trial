@@ -1,0 +1,33 @@
+.hero {
+  padding: 0 10vw 18vh 10vw;
+  min-height: 78vh;
+  background: url("../../Asset/main-banner/bg1.jpg");
+  position: relative;
+  z-index: 1;
+}
+.hero ::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../../Asset/main-banner/shape1.png") no-repeat;
+  background-position: left bottom;
+  background-size: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+.hero-content {
+  width: 50%;
+  color: var(--heading-color);
+}
+
+.hero-img {
+  width: 50%;
+}
+
+.hero-img .img {
+  width: 80%;
+  padding: 0;
+}

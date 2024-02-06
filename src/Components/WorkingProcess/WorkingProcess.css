@@ -1,0 +1,156 @@
+.proccess {
+  padding: 0 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 88vh;
+  background: url("../../Asset/background/line-bg1.png") no-repeat;
+  background-position: center;
+  background-size: center;
+}
+.proccessBoxContainer {
+  width: 75%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.proccessBox {
+  width: 31%;
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 1.5vw 1.8vw 1.8vw 1.8vw;
+  box-shadow: 0px 10px 60px 0px rgba(31, 34, 120, 0.1);
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.proccessBox:nth-child(odd) {
+  margin-top: 10vh;
+}
+.proccessBox:nth-child(even) {
+  background-color: var(--primary);
+}
+
+.proccessBox:nth-child(even)::after {
+  top: 100%;
+  z-index: -1;
+}
+.proccessBox:nth-child(even) .number {
+  color: var(--white);
+  text-shadow: 0 10px 0 #f38f5e;
+  -webkit-text-stroke: 2px var(--white);
+}
+.proccessBox:nth-child(even) .name {
+  color: var(--white);
+}
+.proccessBox:nth-child(even) .description {
+  color: var(--white);
+}
+.proccessBox:nth-child(even) .processBtn {
+  z-index: 1;
+  text-decoration: none;
+  background-color: var(--white);
+}
+.proccessBox:nth-child(even) .btnContent {
+  color: var(--primary);
+}
+.proccessBox:nth-child(even) .processBtnIconBox {
+  background-color: var(--primary);
+}
+.proccessBox:nth-child(even) .processBtnIcon {
+  color: var(--white);
+}
+.proccessBox .number {
+  font-size: 5rem;
+  font-weight: 900;
+  text-shadow: 0 12.5px 0 #f3905e62;
+  -webkit-text-stroke: 2px var(--primary);
+  color: transparent !important;
+  z-index: 1;
+}
+.proccessBox .name {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 1vh;
+  margin-bottom: 1.5vh;
+  z-index: 1;
+}
+.proccessBox .description {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--link-color);
+  z-index: 1;
+}
+/* BTN Link */
+.processBtn {
+  background-color: var(--low-opacity-purple);
+  padding: 5px;
+  padding-left: 2.25vw;
+  border-radius: 7px;
+  font-weight: 500;
+  margin-top: 4vh;
+  margin-bottom: 0.5vh;
+  z-index: 1;
+}
+.processBtn .btnContent {
+  font-size: 0.9rem;
+  color: var(--secondry);
+}
+.processBtn .processBtnIconBox {
+  padding: 6px;
+  background-color: var(--white);
+  color: var(--secondry);
+  border-radius: 8px;
+}
+/* HOVER */
+.proccessBox::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+  transition: top 0.7s ease-in-out;
+}
+.proccessBox:hover::after {
+  top: 0;
+  z-index: -1;
+}
+.proccessBox:hover .number {
+  z-index: 1;
+  transition: 0.6s ease-in-out;
+  color: var(--white);
+  text-shadow: 0 10px 0 #f38f5e;
+  -webkit-text-stroke: 2px var(--white);
+}
+
+.proccessBox:hover .name {
+  z-index: 1;
+  transition: 0.6s ease-in-out;
+  color: var(--white);
+}
+
+.proccessBox:hover .description {
+  z-index: 1;
+  transition: 1s ease-in-out;
+  color: var(--white);
+}
+.proccessBox:hover .processBtn {
+  z-index: 1;
+  text-decoration: none;
+  background-color: var(--white);
+  transition: color 0.6s ease-in-out, background-color 0.7s ease;
+}
+
+.proccessBox:hover .btnContent {
+  transition: 0.6s ease-in-out;
+  color: var(--primary);
+}
+
+.proccessBox:hover .processBtnIconBox {
+  transition: 0.6s ease-in-out;
+  background-color: var(--primary);
+  color: var(--white);
+}

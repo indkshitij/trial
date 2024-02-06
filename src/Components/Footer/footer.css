@@ -1,0 +1,105 @@
+.footer {
+  padding: 24vh 10vw 0 10vw;
+  background: url("../../Asset/banner/img1.jpg") no-repeat;
+  color: var(--tertiary);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.footer::after {
+  content: "";
+  background-image: url(../../Asset/background/footer-shape.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
+  z-index: -1;
+  background-position: left top;
+}
+.linkContainer {
+  padding: 7vh 0;
+}
+.footerBox {
+  width: 20%;
+}
+.footerBox:nth-child(1) {
+  width: 25%;
+}
+.callIcon {
+  background-color: var(--primary);
+  border-radius: 100%;
+  border-bottom-right-radius: 0;
+  padding: 12px 12px;
+}
+.info {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.contact {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 1rem;
+}
+.contactNum {
+  font-size: 1.4rem;
+  color: var(--heading-color);
+  font-weight: 700;
+}
+.footerHeading {
+  color: var(--heading-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.underlineImg {
+  width: 7vw;
+  height: 1vh;
+}
+.footerLink {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: 400;
+}
+.footerLink:hover {
+  text-decoration: none !important;
+  font-weight: 500;
+  transition: 0.7s;
+  color: var(--heading-color);
+}
+/* Social Media */
+.socialLink:hover {
+  transition: 0.7s;
+  filter: grayscale(1);
+}
+/* Email section */
+.EmailInput {
+  background-color: var(--white) !important;
+  font-weight: 400;
+  border: none;
+  font-size: 1rem;
+}
+.emailBtn {
+  background-color: var(--primary);
+  color: white;
+}
+.emailBtn:hover {
+  transition: 0.5s;
+  background-color: #da6826;
+}
+.emailBtnContent {
+  font-weight: 400;
+}
+.copyright {
+  padding: 3vh 0;
+  border-top: 1px solid rgb(213, 213, 213);
+  text-align: center;
+}
+.profile {
+  color: var(--primary) !important;
+}
